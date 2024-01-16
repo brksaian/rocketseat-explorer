@@ -24,42 +24,64 @@
       <form>
         <fieldset>
           <legend>Informações do evento</legend>
+          <div class="input-wrapper">
+            <label for="eventName"
+              >Nome do Evento:<span>(Minimo de 8 caracteres)</span></label
+            >
+            <input type="text" id="eventName" name="eventName" />
+            <label for="eventLink"
+              >Link do Evento:<span>(Comece com https://)</span></label
+            >
+            <input type="text" id="eventLink" name="eventLink" />
+            <label for="eventWhats"
+              >Whats do Evento:<span>(Somente numeros)</span></label
+            >
+            <input type="text" id="eventWhats" name="eventWhats" />
+            <label for="eventInfo">Informações extras:</label>
+            <input type="text" id="eventInfo" name="eventInfo" />
+            <label for="eventCategoria">Categoria do Evento:</label>
+            <select id="eventCategoria" name="eventCategoria">
+              <option value="" selected>Tipo do evento</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+            <label for="eventDate"
+              >Data do Evento:<span>(Minimo de 8 caracteres)</span></label
+            >
+            <input type="date" id="eventDate" name="eventDate" />
+            <label for="eventLocation"
+              >Local do Evento<span>(Minimo de 8 caracteres)</span>:</label
+            >
+            <input type="text" id="eventLocation" name="eventLocation" />
+          </div>
         </fieldset>
-        <div class="input-wrapper">
-          <label for="eventName"
-            >Nome do Evento:<span>(Minimo de 8 caracteres)</span></label
-          >
-          <input type="text" id="eventName" name="eventName" />
-          <label for="eventLink"
-            >Link do Evento:<span>(Comece com https://)</span></label
-          >
-          <input type="text" id="eventLink" name="eventLink" />
-          <label for="eventWhats"
-            >Whats do Evento:<span>(Comece com https://)</span></label
-          >
-          <input type="text" id="eventWhats" name="eventWhats" />
-          <label for="eventInfo"
-            >Info do Evento:<span>(Comece com https://)</span></label
-          >
-          <input type="text" id="eventInfo" name="eventInfo" />
-          <label for="eventCategoria"
-            >Categoria do Evento:</label
-          >
-          <select id="eventCategoria" name="eventCategoria">
-            <option value="" selected>Tipo do evento</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-          </select>
-          <label for="eventDate"
-            >Data do Evento:<span>(Minimo de 8 caracteres)</span></label
-          >
-          <input type="date" id="eventDate" name="eventDate" />
-          <label for="eventLocation"
-            >Local do Evento<span>(Minimo de 8 caracteres)</span>:</label
-          >
-          <input type="text" id="eventLocation" name="eventLocation" />
-          <input type="submit" value="Cadastrar Evento" />
-        </div>
+        <fieldset>
+          <legend>Privacidade</legend>
+          <div class="input-wrapper">
+            <label for="eventAdminEmail"
+              >Email do administrador:<span
+                >(Digite um email válido)</span
+              ></label
+            >
+            <input type="email" id="eventAdminEmail" name="eventAdminEmail" />
+            <label for="eventPassword"
+              >Senha de acesso para os participantes:<span
+                >(Minimo de 8 caracteres)</span
+              ></label
+            >
+            <input type="text" id="eventPassword" name="eventPassword" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Dia e hora</legend>
+          <div class="input-wrapper">
+            <label for="eventDate"
+              >Data do Evento:<span>(Minimo de 8 caracteres)</span></label
+            >
+            <input type="date" id="eventDate" name="eventDate" />
+            <input type="submit" value="Cadastrar Evento" />
+          </div>
+        </fieldset>
       </form>
     </div>
   </body>
