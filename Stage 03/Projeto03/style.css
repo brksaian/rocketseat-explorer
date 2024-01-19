@@ -88,8 +88,10 @@ form {
 }
 
 form input[type="text"],
+form input[type="email"],
 form select,
-form input[type="date"] {
+form input[type="date"],
+form textarea {
   width: calc(100% - 50px);
   padding: 10px;
   margin: 0 25px 10px 25px;
@@ -108,12 +110,22 @@ form input[type="submit"] {
   font-size: 16px;
 }
 
+form textarea {
+  height: 100px;
+}
+
 form input[type="submit"]:hover {
   background-color: #0056b3;
 }
 
 fieldset {
   border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 fieldset legend {
@@ -144,7 +156,7 @@ fieldset legend {
   font-size: 12px;
   line-height: 20px;
 
-  color: #c1bccc;
+  color: #6c6972;
 }
 
 .input-wrapper input {
